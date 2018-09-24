@@ -6,10 +6,7 @@ end
 
 def summon_captain_planet(array)
   new_arr = []
-  array.each do |ele|
-    new_arr << ele.capitalize!
-  end 
-  new_arr
+  array.map { |ele| ele.capitalize! + '!'}
 end
 
 def long_planeteer_calls(array)
